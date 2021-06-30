@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <listeners>
+        <listener class-name="ExtentReport.TestListener"/>
+    </listeners>
+    <test name="1">
+        <classes>
+            <class name="Tests.creat_folder"></class>
+<!--            <class name="Tests.Upload_file"></class>-->
+        </classes>
+    </test>
+        <test name="2">
+            <classes>
+                <class name="Tests.Get_ancestors_file"></class>
+                <class name="Tests.Update_File_Name"></class>
+            </classes>
+        </test>
+        <test name="3">
+            <classes>
+                <class name="Tests.Get_single_file"></class>
+                <class name="Tests.Get_All_File"></class>
+            </classes>
+        </test>
+        <test name="4">
+            <classes>
+                <class name="Tests.DeleteTheFile"></class>
+                <class name="Tests.Delete_all_file"></class>
+            </classes>
+        </test>
+</suite>
+
